@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rudra-Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/rudrarvu.css">
+    
+   
+  </head>
+  <body style="background-color: beige;" onload="myFunction()" style="margin:0;">
+    
+      <div class="loader" id="loader">
+        
+        <div class="loader-container">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <!-- <div class="afterloadland" id="afterloadland">
+      <div class="text-bg-dark p-3 "> <h1 class="display-1" style="color: rgb(169, 255, 255);">
+        Ready to listen to data? <br>
+        Take the better decisons... <br>
+        <button type="button" class="btn btn-info" title="Enter">Experience the power of RUDRA!</button>
+      </h1> </div>
+    </div> -->
+    
+    <div class="afterloadland" id="afterloadland">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo me-lg-5" href="index.html">
+            <img src="images/rudralogo-removebg-preview.png" alt="Logo" width="200px" class="img-fluid">
+            
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active ext-bg-dark p-3" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ext-bg-dark p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item ext-bg-dark p-3" href="#">Team</a></li>
+                  <li><a class="dropdown-item ext-bg-dark p-3" href="#">Vision</a></li>
+                  <li><a class="dropdown-item ext-bg-dark p-3" href="#">Mission</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link ext-bg-dark p-3" href="#serviceitems">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ext-bg-dark p-3" href="#" id="navbarDropdownProjects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownProjects">
+                  <li><a class="dropdown-item ext-bg-dark p-3" href="#projects">Crop Analysis</a></li>
+                  <li><a class="dropdown-item ext-bg-dark p-3" href="#projects">Marks analysis</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link ext-bg-dark p-3" href="mailto:sriaranea@gmail.com">Join</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link ext-bg-dark p-3" href="mailto:sriaranea@gmail.com">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+        <div class="text-bg-warning p-3" style="text-align: center;"><h2>Resourceful Unit for Data Research and Analysis</h2></div>
+       <div id="intro"> <h1 class="display-3 landingline">Analytics Redefined, Solutions Refined: <br> Rudra - Pioneering Analytical Excellence.</h1></div>
+        
+<div id="serviceitems" class="blackbackgroundcontainer">
+    <div class="services"><div class="ext-bg-primary p-3" style="text-align: center;"><p class="h2">Services</p></div></div>
+    <div class="service-tabs">
+    <button class="service-tablinks" onclick="openService(event, 'dataAnalysis')">Data Analysis</button>
+    <button class="service-tablinks" onclick="openService(event, 'businessIntelligence')">Business Intelligence</button>
+    <button class="service-tablinks" onclick="openService(event, 'predictiveModeling')">Predictive Modeling</button>
+    <button class="service-tablinks" onclick="openService(event, 'toolsandTechnologies')">Tools and Technologies</button>
+    <button class="service-tablinks" onclick="openService(event, 'advisoryandteaching')">Advisory and Teaching</button>
+  </div>
+  
+ 
+  <div id="dataAnalysis" class="service-tabcontent">
+    <h3>Data Analysis</h3>
+    <ul>
+      <li>Comprehensive analysis of diverse datasets</li>
+      <li>Deriving actionable insights for strategic decision-making</li>
+      <li>Transforming complex data into visually engaging dashboards</li>
+     
+    </ul>
+  </div>
+  
+  <div id="businessIntelligence" class="service-tabcontent">
+    <h3>Business Intelligence</h3>
+    <ul>
+      <li>Empowering businesses with actionable insights</li>
+      <li>Creating intuitive reports for better understanding of trends</li>
+      <li>Aiding in decision-making with clear data visualization</li>
+      
+    </ul>
+  </div>
+  
+  <div id="predictiveModeling" class="service-tabcontent">
+    <h3>Predictive Modeling</h3>
+    <ul>
+      <li>Analytics techniques for predicting future outcomes</li>
+      <li>Utilizing historical data for trend forecasting</li>
+      <li>Identifying risks and optimizing strategies</li>
+      
+    </ul>
+  </div>
+  <div id="toolsandTechnologies" class="service-tabcontent">
+    <h3>Tools and technologies</h3>
+    <ul>
+        <li> Leveraging the power of Excel for robust data organization, analysis, and visualization, ensuring precision and clarity in every project step.</li>
+        <li> Harnessing the versatility of Jupyter Notebook for Python, crafting dynamic and interactive data-driven solutions, fostering innovation and efficiency.</li>
+        <li> Utilizing Power BI's intuitive capabilities to create compelling visualizations, transforming complex data into actionable insights, empowering informed decision-making.</li>
+      
+    </ul>
+  </div>
+  <div id="advisoryandteaching" class="service-tabcontent">
+    <h3>Data Insights Mentorship</h3>
+<ul>
+    <li> Strategic coaching sessions offering insights on advanced analytics methodologies, ensuring informed decision-making and innovation in your projects.</li>
+    <li> Educational workshops designed to cultivate expertise in data analysis tools like Excel, Jupyter Notebook, and Power BI, empowering individuals with practical skills.</li>
+    <li> Tailored mentorship programs guiding aspiring analysts to master the art of data interpretation, visualization, and strategic implementation.</li>
+</ul>
+
+  </div>
+  <div id="testimonials">
+    <div class="text-bg-primary p-3" id="testheadline">Testimonials</div>
+    <div class="card card-testimonials" style="width: 18rem;">
+        <img src="images/rudralogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Name</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+      <div class="card card-testimonials" style="width: 18rem;">
+        <img src="images/rudralogo.png" class="card-img-top rounded-circle" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Just a name</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+      <div class="card card-testimonials" style="width: 18rem;">
+        <img src="images/rudralogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Some name</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+      <div id="collab">
+        <div class="text-bg-primary p-3" id="testheadline">Collaborations</div>
+      <div class="card card-testimonials" style="width: 18rem;" id="collabcard">
+        <a href=""><img src="images/rudralogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+        </a>
+       </div>
+      <div class="card card-testimonials" style="width: 18rem;" id="collabcard">
+        <a href=""><img src="images/rudralogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div></a>
+      </div>
+      <div class="card card-testimonials" style="width: 18rem;" id="collabcard">
+        <a href=""><img src="images/rudralogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="projects" class="blackbackgroundcontainer">
+  <div class="text-bg-primary p-3" style="text-align: center;" id="testheadline"><p class="h2">Projects</p></div>
+  <div class="card card-testimonials" style="width: 18rem;" id="collabcard">
+    <a href=""><img src="images/cropanalysis.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Crop Analysis </h5>
+      <a href="pdfs/RUDRA CROP ANALYSIS REPORT.pdf" class="btn btn-primary">View Project</a>
+    </div>
+    </a>
+   </div><div class="card card-testimonials" style="width: 18rem;" id="collabcard">
+    <a href=""><img src="images/MARKS ANALYSIS OF STUDENTS OF SECTION B IN ASSESSMENT 3-2.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Marks Analysis of Section B assessment 3</h5>
+      <a href="images/MARKS ANALYSIS OF STUDENTS OF SECTION B IN ASSESSMENT 3-2.png" class="btn btn-primary">View Project</a>
+    </div>
+    </a>
+   </div>
+    
+    
+  </div>
+
+</div>
+
+  
+  
+    
+    <footer>
+      <br>
+      <div class="footer text-bg-dark p-3" >
+        <div class="containlinkicon">
+        <div class="footerlink">
+          <a href="mailto:sriaranea@gmail.com">Contact Us Now!</a>
+        </div>
+        <div class="footerlink">
+          <a href="index.html">Go to Top</a>
+        </div>
+        <div class="footericons">
+          <a href="https://www.instagram.com/sriaranea/"><img src="images/instagramwhite-removebg-preview-cropped.png" alt="Instagram" ></a>
+          <a href="https://www.facebook.com/profile.php?id=61554240071003"><img src="images/facebooklogo-removebg-preview-cropped.png" alt="Facebook"></a>
+          <a href="https://www.linkedin.com/in/sri-aranea-74845a2a4/"><img src="images/linkedinlogowhite-removebg-preview-nobg-cropped.png" alt="Linkedin"></a>
+          <a href="https://twitter.com/SriAranea"><img src="images/Twitter-X-White-Logo-PNG-removebg-preview-cropped.png" alt="Twitter"></a>
+          <a href="mailto:sriaranea@gmail.com"><img src="images/Mail-Icon-White-on-Black.png" alt="Email"></a>
+        </div>
+      </div>
+<hr class="footerhr"><br class="lastbreak">
+<span class="footnote" >
+  <a href="rule.html#copyright">&copy; 
+  <p class="foottext">Sri <em>Aranea</em> 2023 </p></a>
+  
+  
+</span>
+</div>
+
+    </footer>
+  </div>
+    <script>
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("afterloadland").style.display = "block";
+      }
+      </script>
+  <script>
+    function clearBars() {
+      document.querySelectorAll('.bar').forEach((bar, index) => {
+        bar.style.animation = 'none';
+        setTimeout(() => {
+          bar.style.animation = `barAnimation${(index % 3) + 1} 1s linear forwards`;
+        }, index * 1000);
+      });
+    }
+
+    setInterval(clearBars, 3000);
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+    <script>
+        function openService(evt, serviceName) {
+          var i, serviceTabcontent, serviceTablinks;
+        
+          
+          serviceTabcontent = document.getElementsByClassName("service-tabcontent");
+          for (i = 0; i < serviceTabcontent.length; i++) {
+            serviceTabcontent[i].style.display = "none";
+          }
+        
+          
+          serviceTablinks = document.getElementsByClassName("service-tablinks");
+          for (i = 0; i < serviceTablinks.length; i++) {
+            serviceTablinks[i].className = serviceTablinks[i].className.replace(" active", "");
+          }
+        
+          
+          document.getElementById(serviceName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+       
+        document.getElementsByClassName("service-tablinks")[0].click();
+        </script>
+  </body>
+</html>

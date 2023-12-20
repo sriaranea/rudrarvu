@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .loader-container {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .bar {
+      height: 0;
+      width: 20px;
+      margin: 0 5px;
+      background-color: #3498db;
+      animation: barAnimation 1s linear forwards;
+    }
+    bar1{
+        background-color: #3c92e7;
+      animation: barAnimation1 1s linear forwards; 
+    }
+
+    .bar2 {
+      background-color: #e74c3c;
+      animation: barAnimation2 1s linear forwards;
+    }
+
+    .bar3 {
+      background-color: #2ecc71;
+      animation: barAnimation3 1s linear forwards;
+    }
+
+    @keyframes barAnimation {
+      0% { height: 0; }
+      100% { height: 40px; }
+    }
+    @keyframes barAnimation1 {
+      0% { height: 0; }
+      100% { height: 40px; }
+    }
+
+    @keyframes barAnimation2 {
+      0% { height: 0; }
+      100% { height: 60px; }
+    }
+
+    @keyframes barAnimation3 {
+      0% { height: 0; }
+      100% { height: 80px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+  </div>
+
+  <script>
+    function clearBars() {
+      document.querySelectorAll('.bar').forEach((bar, index) => {
+        bar.style.animation = 'none';
+        setTimeout(() => {
+          bar.style.animation = `barAnimation${(index % 3) + 1} 1s linear forwards`;
+        }, index * 1000);
+      });
+    }
+
+    setInterval(clearBars, 3000);
+  </script>
+</body>
+</html>
